@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Deployment.Application;
+using System.Data.SQLite;
 
 
 namespace WpfApplication1
@@ -25,6 +26,8 @@ namespace WpfApplication1
         public MainWindow()
         {
             InitializeComponent();
+
+            label1.Content = global::WpfApplication1.Resources.Resource1.String3;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -55,6 +58,20 @@ namespace WpfApplication1
 
             }
 
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            using (var connection = new SQLiteConnection("DATA Source=test.db"))
+            {
+                connection.Open();
+                using (SQLiteCommand command = connection.CreateCommand())
+                {
+                    command.CommandText = "create table hoge(id INTEGER PRIMARY KEY AUTOINCREMENT, field1 TEXT, field2 REAL, field3 BLOB)";
+                    command.ExecuteNonQuery();
+                }
+                connection.Close();
+            }
         }
     }
 }
