@@ -62,7 +62,16 @@ namespace WpfApplication1
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            using (var connection = new SQLiteConnection("DATA Source=test.mdb"))
+            if (!ApplicationDeployment.IsNetworkDeployed)
+            {
+                MessageBox.Show("ClickOnce を使用していません");
+                return;
+            }
+
+            string db_file = ApplicationDeployment.CurrentDeployment.DataDirectory + "\test.mdb";
+
+            MessageBox.Show(db_file);
+            using (var connection = new SQLiteConnection("DATA Source="+db_file))
             {
                 connection.Open();
                 using (SQLiteCommand command = connection.CreateCommand())
