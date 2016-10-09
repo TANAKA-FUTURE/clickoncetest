@@ -68,7 +68,7 @@ namespace WpfApplication1
                 return;
             }
 
-            string db_file = ApplicationDeployment.CurrentDeployment.DataDirectory + "\test.mdb";
+            string db_file = ApplicationDeployment.CurrentDeployment.DataDirectory+@"\test.mdb";
 
             MessageBox.Show(db_file);
             using (var connection = new SQLiteConnection("DATA Source="+db_file))
