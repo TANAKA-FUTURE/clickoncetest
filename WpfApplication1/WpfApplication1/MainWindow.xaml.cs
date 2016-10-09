@@ -62,16 +62,18 @@ namespace WpfApplication1
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            using (var connection = new SQLiteConnection("DATA Source=test.db"))
+            using (var connection = new SQLiteConnection("DATA Source=test.mdb"))
             {
                 connection.Open();
                 using (SQLiteCommand command = connection.CreateCommand())
                 {
-                    command.CommandText = "create table hoge(id INTEGER PRIMARY KEY AUTOINCREMENT, field1 TEXT, field2 REAL, field3 BLOB)";
-                    command.ExecuteNonQuery();
+                    //command.CommandText = "create table hoge(id INTEGER PRIMARY KEY AUTOINCREMENT, field1 TEXT, field2 REAL, field3 BLOB)";
+                    //command.ExecuteNonQuery();
                 }
                 connection.Close();
             }
+
+            MessageBox.Show("DB接続　正常終了");
         }
     }
 }
