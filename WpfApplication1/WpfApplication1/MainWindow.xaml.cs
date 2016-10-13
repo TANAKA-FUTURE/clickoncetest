@@ -27,7 +27,7 @@ namespace WpfApplication1
         {
             InitializeComponent();
 
-            label1.Content = global::WpfApplication1.Resources.Resource1.String3;
+            label1.Content = System.Configuration.ConfigurationManager.AppSettings["key1"];
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
