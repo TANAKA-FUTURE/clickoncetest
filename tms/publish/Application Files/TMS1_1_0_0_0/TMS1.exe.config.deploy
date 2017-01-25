@@ -1,0 +1,1972 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <configSections>
+    <section name="entityFramework" type="System.Data.Entity.Internal.ConfigFile.EntityFrameworkSection, EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" requirePermission="false" />
+    <sectionGroup name="applicationSettings" type="System.Configuration.ApplicationSettingsGroup, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <section name="TMS1.Properties.Settings" type="System.Configuration.ClientSettingsSection, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" requirePermission="false" />
+    </sectionGroup>
+    <!-- For more information on Entity Framework configuration, visit http://go.microsoft.com/fwlink/?LinkID=237468 -->
+  </configSections>
+  <startup>
+    <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.5.1" />
+  </startup>
+  <entityFramework>
+    <defaultConnectionFactory type="System.Data.Entity.Infrastructure.LocalDbConnectionFactory, EntityFramework">
+      <parameters>
+        <parameter value="v13.0" />
+      </parameters>
+    </defaultConnectionFactory>
+    <providers>
+      <provider invariantName="System.Data.SQLite" type="System.Data.SQLite.EF6.SQLiteProviderServices, System.Data.SQLite.EF6" />
+      <provider invariantName="System.Data.SQLite.EF6" type="System.Data.SQLite.EF6.SQLiteProviderServices, System.Data.SQLite.EF6" />
+    </providers>
+  </entityFramework>
+  <applicationSettings>
+    <TMS1.Properties.Settings>
+      <setting name="team_title" serializeAs="String">
+        <value>チーム構成設定</value>
+      </setting>
+      <setting name="team_subtitle" serializeAs="String">
+        <value>Team configuration settings</value>
+      </setting>
+      <setting name="team_menu_teamlist" serializeAs="String">
+        <value>チーム一覧</value>
+      </setting>
+      <setting name="team_menu_teamsignup" serializeAs="String">
+        <value>チームの新規登録</value>
+      </setting>
+      <setting name="team_menu_teambrowse" serializeAs="String">
+        <value>チームの閲覧・編集</value>
+      </setting>
+      <setting name="team_menu_teamconstitution" serializeAs="String">
+        <value>チーム構成経歴閲覧</value>
+      </setting>
+      <setting name="team_bulkchanges" serializeAs="String">
+        <value>チームメンバー一括変更</value>
+      </setting>
+      <setting name="team_signup" serializeAs="String">
+        <value>新規チーム登録</value>
+      </setting>
+      <setting name="team_childage" serializeAs="String">
+        <value>園児の年齢</value>
+      </setting>
+      <setting name="team_teamhistory" serializeAs="String">
+        <value>チーム構成履歴</value>
+      </setting>
+      <setting name="team_histry" serializeAs="String">
+        <value>履歴</value>
+      </setting>
+      <setting name="team_registration" serializeAs="String">
+        <value>チーム登録</value>
+      </setting>
+      <setting name="team_memberregistration" serializeAs="String">
+        <value>チームメンバー登録</value>
+      </setting>
+      <setting name="team_join" serializeAs="String">
+        <value>*職責を選択後、加入するメンバーの氏名を選択欄よりドラッグ＆ドロップで移動してください。</value>
+      </setting>
+      <setting name="team_rate" serializeAs="String">
+        <value>割合</value>
+      </setting>
+      <setting name="team_memberedit" serializeAs="String">
+        <value>チームメンバー編集</value>
+      </setting>
+      <setting name="team_leaving" serializeAs="String">
+        <value>*退出する場合をメンバー選択欄へドラッグ＆ドロップで移動してください。</value>
+      </setting>
+      <setting name="team_startdate" serializeAs="String">
+        <value>開始日</value>
+      </setting>
+      <setting name="team_enddate" serializeAs="String">
+        <value>終了日</value>
+      </setting>
+      <setting name="team_moveright" serializeAs="String">
+        <value>右の選択肢より移動してください</value>
+      </setting>
+      <setting name="team_bedidesmember" serializeAs="String">
+        <value>所属するメンバー以外</value>
+      </setting>
+      <setting name="team_makeealuat" serializeAs="String">
+        <value>評価対象とする</value>
+      </setting>
+      <setting name="team_teamdelete" serializeAs="String">
+        <value>チームの削除</value>
+      </setting>
+      <setting name="team_staff" serializeAs="String">
+        <value>職員</value>
+      </setting>
+      <setting name="team_memochoicedate" serializeAs="String">
+        <value>*選択しない場合は本日の日付となります。</value>
+      </setting>
+      <setting name="team_memomemberdelete" serializeAs="String">
+        <value>*メンバーをチームから削除する際は、職員リストからメンバーリストへドラッグ＆ドロップで移動してください。</value>
+      </setting>
+      <setting name="team_halfsizeinput" serializeAs="String">
+        <value>入力してください(半角英数)</value>
+      </setting>
+      <setting name="team_teambalance" serializeAs="String">
+        <value>チーム所属バランスの設定</value>
+      </setting>
+      <setting name="team_steambalance" serializeAs="String">
+        <value>さんのチーム所属バランス</value>
+      </setting>
+      <setting name="team_memoteambalance" serializeAs="String">
+        <value>*複数チームに所属する場合は割合の合計を100%にしてください。</value>
+      </setting>
+      <setting name="team_teamedit" serializeAs="String">
+        <value>チーム編集</value>
+      </setting>
+      <setting name="manage_title" serializeAs="String">
+        <value>クラスごとの数値指標</value>
+      </setting>
+      <setting name="manage_subtitle" serializeAs="String">
+        <value>Numerical index of each class</value>
+      </setting>
+      <setting name="manage_submenu_resultinput" serializeAs="String">
+        <value>クラスごとの結果入力</value>
+      </setting>
+      <setting name="manage_menu_resultbrowse" serializeAs="String">
+        <value>クラスごとの結果履歴閲覧</value>
+      </setting>
+      <setting name="manage_submenu_browse" serializeAs="String">
+        <value>数値指標の閲覧・編集</value>
+      </setting>
+      <setting name="manage_submenu_groupcreate" serializeAs="String">
+        <value>数値指標グループの新規作成</value>
+      </setting>
+      <setting name="manage_menu_groupbrowse" serializeAs="String">
+        <value>数値指標グループの閲覧・編集</value>
+      </setting>
+      <setting name="manage_submenu_classresult" serializeAs="String">
+        <value>クラスごとの数値指標の結果入力</value>
+      </setting>
+      <setting name="manage_submenu_classgroup" serializeAs="String">
+        <value>クラスごとの数値指標のグループ設定</value>
+      </setting>
+      <setting name="manage_submenu_classtransition" serializeAs="String">
+        <value>クラスごとの数値指標の推移</value>
+      </setting>
+      <setting name="manage_teamresult" serializeAs="String">
+        <value>今回チーム結果</value>
+      </setting>
+      <setting name="manage_valuation" serializeAs="String">
+        <value>点／１００点</value>
+      </setting>
+      <setting name="manage_previoussurvey" serializeAs="String">
+        <value>前　回　比</value>
+      </setting>
+      <setting name="manage_points" serializeAs="String">
+        <value>点</value>
+      </setting>
+      <setting name="manage_submenu_contents" serializeAs="String">
+        <value>contents</value>
+      </setting>
+      <setting name="manage_submenu_addnumericalindex" serializeAs="String">
+        <value>数値指標の追加/編集</value>
+      </setting>
+      <setting name="manage_submenu_numericalindexgroap" serializeAs="String">
+        <value>数値指標グループ設定</value>
+      </setting>
+      <setting name="manage_submenu_teamresultgraph" serializeAs="String">
+        <value>チーム成果結果の経歴グラフシート表示</value>
+      </setting>
+      <setting name="manage_latestresult" serializeAs="String">
+        <value>最新の記録</value>
+      </setting>
+      <setting name="manage_lasttimeteamresult" serializeAs="String">
+        <value>前回チーム結果</value>
+      </setting>
+      <setting name="manage_comment" serializeAs="String">
+        <value>*単位を入力すると、０点指標・満点指標に単位が自動反映されます。</value>
+      </setting>
+      <setting name="manage_numericalindexgroupsignup" serializeAs="String">
+        <value>数値指標グループの新規登録</value>
+      </setting>
+      <setting name="manage_numericalindexgrouplist" serializeAs="String">
+        <value>数値指標グループ一覧</value>
+      </setting>
+      <setting name="manage_childcarebase" serializeAs="String">
+        <value>保育士基本</value>
+      </setting>
+      <setting name="manage_numericalindexregistration" serializeAs="String">
+        <value>数値指標グループ登録</value>
+      </setting>
+      <setting name="manage_groupname" serializeAs="String">
+        <value>グループ名</value>
+      </setting>
+      <setting name="manage_scoredestribution" serializeAs="String">
+        <value>得点配分</value>
+      </setting>
+      <setting name="manage_totaｌ" serializeAs="String">
+        <value>(合計</value>
+      </setting>
+      <setting name="manage_groupdelete" serializeAs="String">
+        <value>グループの削除</value>
+      </setting>
+      <setting name="manage_numericalindexsignup" serializeAs="String">
+        <value>新規数値指標登録</value>
+      </setting>
+      <setting name="manage_numericalgroupedit" serializeAs="String">
+        <value>数値指標グループ編集</value>
+      </setting>
+      <setting name="manage_monthlyinput" serializeAs="String">
+        <value>月別入力</value>
+      </setting>
+      <setting name="manage_lumpinginput" serializeAs="String">
+        <value>一括入力</value>
+      </setting>
+      <setting name="manage_unitetc" serializeAs="String">
+        <value>％など</value>
+      </setting>
+      <setting name="manage_alphanumerical" serializeAs="String">
+        <value>半角英数</value>
+      </setting>
+      <setting name="manage_sublectstaff" serializeAs="String">
+        <value>対象とする職員など</value>
+      </setting>
+      <setting name="manage_totalpoint" serializeAs="String">
+        <value>点)</value>
+      </setting>
+      <setting name="manage_newgroupregistration" serializeAs="String">
+        <value>新規グループ登録</value>
+      </setting>
+      <setting name="manage_remark" serializeAs="String">
+        <value>備　　考</value>
+      </setting>
+      <setting name="staff_halfsize" serializeAs="String">
+        <value>(半角英数)</value>
+      </setting>
+      <setting name="staff_required" serializeAs="String">
+        <value>(必須)</value>
+      </setting>
+      <setting name="staff_partialmatch" serializeAs="String">
+        <value>(部分一致)</value>
+      </setting>
+      <setting name="staff_proviso" serializeAs="String">
+        <value>※以下の項目は「キャリアパス」より入力することができます。</value>
+      </setting>
+      <setting name="staff_subtitle" serializeAs="String">
+        <value>Staff table</value>
+      </setting>
+      <setting name="staff_mainoccupation" serializeAs="String">
+        <value>主な職種</value>
+      </setting>
+      <setting name="staff_undegraduate" serializeAs="String">
+        <value>学部等</value>
+      </setting>
+      <setting name="staff_educationalpualification" serializeAs="String">
+        <value>学　 歴</value>
+      </setting>
+      <setting name="staff_pastcareer" serializeAs="String">
+        <value>過去の経歴</value>
+      </setting>
+      <setting name="staff_familymarkup" serializeAs="String">
+        <value>家族構成</value>
+      </setting>
+      <setting name="staff_periodtemporaryretirement" serializeAs="String">
+        <value>休職期間</value>
+      </setting>
+      <setting name="staff_maidenname" serializeAs="String">
+        <value>旧姓</value>
+      </setting>
+      <setting name="staff_emergencycontact" serializeAs="String">
+        <value>緊急連絡先</value>
+      </setting>
+      <setting name="staff_workstartedday" serializeAs="String">
+        <value>勤続開始日</value>
+      </setting>
+      <setting name="ataff_workstartedexample" serializeAs="String">
+        <value>勤続年数00年0ヶ月</value>
+      </setting>
+      <setting name="staff_cellularphone" serializeAs="String">
+        <value>携帯電話</value>
+      </setting>
+      <setting name="staff_searchcondition" serializeAs="String">
+        <value>検索条件</value>
+      </setting>
+      <setting name="staff_searchclose" serializeAs="String">
+        <value>検索枠を閉じる</value>
+      </setting>
+      <setting name="staff_trainingexperience" serializeAs="String">
+        <value>研修参加実績</value>
+      </setting>
+      <setting name="staff_irregularemployment" serializeAs="String">
+        <value>現職者(非正規)</value>
+      </setting>
+      <setting name="staff_privatesheetdelete" serializeAs="String">
+        <value>個人ページを削除</value>
+      </setting>
+      <setting name="staff_photpdelete" serializeAs="String">
+        <value>この画像を削除</value>
+      </setting>
+      <setting name="staff_agesearch" serializeAs="String">
+        <value>歳</value>
+      </setting>
+      <setting name="staff_detailsearch" serializeAs="String">
+        <value>さらに詳細を検索する</value>
+      </setting>
+      <setting name="staff_photo" serializeAs="String">
+        <value>写真</value>
+      </setting>
+      <setting name="staff_address" serializeAs="String">
+        <value>住所</value>
+      </setting>
+      <setting name="staff_acquisitionqualification" serializeAs="String">
+        <value>取得資格</value>
+      </setting>
+      <setting name="staff_submenu_staffinfobrowse" serializeAs="String">
+        <value>職員情報の閲覧・編集</value>
+      </setting>
+      <setting name="staff_submenu_sutaffinfosignup" serializeAs="String">
+        <value>職員情報の新規登録</value>
+      </setting>
+      <setting name="staff_staffsignup" serializeAs="String">
+        <value>職員の新規登録</value>
+      </setting>
+      <setting name="staff_title" serializeAs="String">
+        <value>職員表</value>
+      </setting>
+      <setting name="staff_dutiescarrer" serializeAs="String">
+        <value>職務経歴</value>
+      </setting>
+      <setting name="staff_genderfemale" serializeAs="String">
+        <value>女性</value>
+      </setting>
+      <setting name="staff_affiliation" serializeAs="String">
+        <value>所属チーム</value>
+      </setting>
+      <setting name="staff_birthday" serializeAs="String">
+        <value>生年月日</value>
+      </setting>
+      <setting name="staff_gender" serializeAs="String">
+        <value>性別</value>
+      </setting>
+      <setting name="staff_graduateschool" serializeAs="String">
+        <value>卒業校</value>
+      </setting>
+      <setting name="staff_otheraffiliation" serializeAs="String">
+        <value>その他所属</value>
+      </setting>
+      <setting name="staff_terminationdate" serializeAs="String">
+        <value>退職日</value>
+      </setting>
+      <setting name="staff_gender_male" serializeAs="String">
+        <value>男性</value>
+      </setting>
+      <setting name="staff_addto" serializeAs="String">
+        <value>追加</value>
+      </setting>
+      <setting name="staff_point" serializeAs="String">
+        <value>点</value>
+      </setting>
+      <setting name="staff_notices" serializeAs="String">
+        <value>特記事項</value>
+      </setting>
+      <setting name="staff_staffage" serializeAs="String">
+        <value>年齢</value>
+      </setting>
+      <setting name="staff_ageexample" serializeAs="String">
+        <value>年齢000歳</value>
+      </setting>
+      <setting name="staff_choice" serializeAs="String">
+        <value>選択</value>
+      </setting>
+      <setting name="staff_phonetic" serializeAs="String">
+        <value>ふりがな</value>
+      </setting>
+      <setting name="staff_meil" serializeAs="String">
+        <value>メール</value>
+      </setting>
+      <setting name="staff_postalcode" serializeAs="String">
+        <value>郵便番号</value>
+      </setting>
+      <setting name="staff_transfer" serializeAs="String">
+        <value>異動（転出）</value>
+      </setting>
+      <setting name="staff_deacquisition" serializeAs="String">
+        <value>異動（除籍）</value>
+      </setting>
+      <setting name="staff_yes" serializeAs="String">
+        <value>有</value>
+      </setting>
+      <setting name="staff_no" serializeAs="String">
+        <value>無</value>
+      </setting>
+      <setting name="staff_familyname" serializeAs="String">
+        <value>氏</value>
+      </setting>
+      <setting name="staff_firstname" serializeAs="String">
+        <value>名</value>
+      </setting>
+      <setting name="staff_jfamilyname" serializeAs="String">
+        <value>し</value>
+      </setting>
+      <setting name="staff_jfirstname" serializeAs="String">
+        <value>めい</value>
+      </setting>
+      <setting name="staff_personalinfo" serializeAs="String">
+        <value>個人情報</value>
+      </setting>
+      <setting name="staff_spage" serializeAs="String">
+        <value>さんのページ</value>
+      </setting>
+      <setting name="staff_signup" serializeAs="String">
+        <value>新規登録</value>
+      </setting>
+      <setting name="staff_page" serializeAs="String">
+        <value>ページ</value>
+      </setting>
+      <setting name="staff_familynamejc" serializeAs="String">
+        <value>氏（かなも可）</value>
+      </setting>
+      <setting name="staff_firstnamejc" serializeAs="String">
+        <value>名（かなも可）</value>
+      </setting>
+      <setting name="staff_inputbackground" serializeAs="String">
+        <value>経歴内容を入力してください。(会社名・職務内容など)</value>
+      </setting>
+      <setting name="staff_familyrelationship" serializeAs="String">
+        <value>続柄</value>
+      </setting>
+      <setting name="staff_caughtmotivation" serializeAs="String">
+        <value>履歴書もしくは面接時に聞き取った志望動機</value>
+      </setting>
+      <setting name="staff_mentioning" serializeAs="String">
+        <value>上記内容以外の記載内容</value>
+      </setting>
+      <setting name="staff_personalpagedelete" serializeAs="String">
+        <value>個人ページの削除</value>
+      </setting>
+      <setting name="staff_namesearch" serializeAs="String">
+        <value>氏　名</value>
+      </setting>
+      <setting name="staff_ages" serializeAs="String">
+        <value>年　齢</value>
+      </setting>
+      <setting name="staff_addresssearch" serializeAs="String">
+        <value>住　所</value>
+      </setting>
+      <setting name="staff_positionsearch" serializeAs="String">
+        <value>職　位</value>
+      </setting>
+      <setting name="staff_responsibilitysearch" serializeAs="String">
+        <value>職　責</value>
+      </setting>
+      <setting name="staff_gendersearch" serializeAs="String">
+        <value>性　別</value>
+      </setting>
+      <setting name="staff_career" serializeAs="String">
+        <value>キャリア</value>
+      </setting>
+      <setting name="staff_husband" serializeAs="String">
+        <value>夫</value>
+      </setting>
+      <setting name="staff_wife" serializeAs="String">
+        <value>妻</value>
+      </setting>
+      <setting name="staff_father" serializeAs="String">
+        <value>父</value>
+      </setting>
+      <setting name="staff_mother" serializeAs="String">
+        <value>母</value>
+      </setting>
+      <setting name="staff_child" serializeAs="String">
+        <value>子</value>
+      </setting>
+      <setting name="staff_stepfather" serializeAs="String">
+        <value>義父</value>
+      </setting>
+      <setting name="staff_stepmother" serializeAs="String">
+        <value>義母</value>
+      </setting>
+      <setting name="staff_olderbrother" serializeAs="String">
+        <value>兄</value>
+      </setting>
+      <setting name="staff_yaungerbrother" serializeAs="String">
+        <value>弟</value>
+      </setting>
+      <setting name="staff_oldersister" serializeAs="String">
+        <value>姉</value>
+      </setting>
+      <setting name="staff_yaungersister" serializeAs="String">
+        <value>妹</value>
+      </setting>
+      <setting name="staff_grandchild" serializeAs="String">
+        <value>孫</value>
+      </setting>
+      <setting name="staff_grandfather" serializeAs="String">
+        <value>祖父</value>
+      </setting>
+      <setting name="staff_grandmother" serializeAs="String">
+        <value>祖母</value>
+      </setting>
+      <setting name="staff_other" serializeAs="String">
+        <value>その他</value>
+      </setting>
+      <setting name="staff_mainresponsibility" serializeAs="String">
+        <value>主な職責</value>
+      </setting>
+      <setting name="staff_educationalqualification" serializeAs="String">
+        <value>学　　歴</value>
+      </setting>
+      <setting name="staff_year" serializeAs="String">
+        <value>年</value>
+      </setting>
+      <setting name="staff_months" serializeAs="String">
+        <value>ヶ月</value>
+      </setting>
+      <setting name="staff_frompoints" serializeAs="String">
+        <value>点～</value>
+      </setting>
+      <setting name="staff_selectfile" serializeAs="String">
+        <value>ファイルから選択</value>
+      </setting>
+      <setting name="staff_deleteimage" serializeAs="String">
+        <value>この画像を削除</value>
+      </setting>
+      <setting name="staff_mainfunctionclassification" serializeAs="String">
+        <value>主な職能区分</value>
+      </setting>
+      <setting name="career_perbeyond" serializeAs="String">
+        <value>％以上</value>
+      </setting>
+      <setting name="career_perunder" serializeAs="String">
+        <value>％未満　</value>
+      </setting>
+      <setting name="career_relevancespecificgravity" serializeAs="String">
+        <value>【数値指標と職能基準との関連性及びその比重】</value>
+      </setting>
+      <setting name="career_evaluationviewpoint" serializeAs="String">
+        <value>【評価観点】</value>
+      </setting>
+      <setting name="career_jobe" serializeAs="String">
+        <value>＜E職＞
+第二職位</value>
+      </setting>
+      <setting name="career_jobj" serializeAs="String">
+        <value>＜J職＞
+第六職位</value>
+      </setting>
+      <setting name="career_jobl" serializeAs="String">
+        <value>＜L職＞
+第四職位</value>
+      </setting>
+      <setting name="career_jobm" serializeAs="String">
+        <value>＜M職＞
+第三職位</value>
+      </setting>
+      <setting name="career_jobse" serializeAs="String">
+        <value>＜SE職＞
+最高職位</value>
+      </setting>
+      <setting name="career_jobs" serializeAs="String">
+        <value>＜S職＞
+第五職位</value>
+      </setting>
+      <setting name="career_jobtrial" serializeAs="String">
+        <value>＜試用期間＞
+第七職位</value>
+      </setting>
+      <setting name="career_to" serializeAs="String">
+        <value>▶</value>
+      </setting>
+      <setting name="career_toto" serializeAs="String">
+        <value>→</value>
+      </setting>
+      <setting name="career_first" serializeAs="String">
+        <value>1級～</value>
+      </setting>
+      <setting name="career_subtitle" serializeAs="String">
+        <value>Career paths</value>
+      </setting>
+      <setting name="career_newposition" serializeAs="String">
+        <value>新しい職位</value>
+      </setting>
+      <setting name="career_newpositionsetting" serializeAs="String">
+        <value>新しい職位を設定してください。</value>
+      </setting>
+      <setting name="career_below" serializeAs="String">
+        <value>以下の</value>
+      </setting>
+      <setting name="career_above" serializeAs="String">
+        <value>以上</value>
+      </setting>
+      <setting name="career_morethan" serializeAs="String">
+        <value>以上していること</value>
+      </setting>
+      <setting name="career_moreattendance" serializeAs="String">
+        <value>以上受講していること</value>
+      </setting>
+      <setting name="career_moreacquisition" serializeAs="String">
+        <value>以上取得していること</value>
+      </setting>
+      <setting name="career_testlist" serializeAs="String">
+        <value>園内検定一覧</value>
+      </setting>
+      <setting name="career_submenu_testresultsbatchinput" serializeAs="String">
+        <value>園内検定結果一括入力</value>
+      </setting>
+      <setting name="career_testdelete" serializeAs="String">
+        <value>園内検定の削除</value>
+      </setting>
+      <setting name="career_testsignup" serializeAs="String">
+        <value>園内検定の新規登録・編集</value>
+      </setting>
+      <setting name="career_testname" serializeAs="String">
+        <value>検定名</value>
+      </setting>
+      <setting name="career_commentary" serializeAs="String">
+        <value>解説</value>
+      </setting>
+      <setting name="career_refine" serializeAs="String">
+        <value>該当者絞り込み</value>
+      </setting>
+      <setting name="career_from" serializeAs="String">
+        <value>から</value>
+      </setting>
+      <setting name="career_title" serializeAs="String">
+        <value>キャリアパス</value>
+      </setting>
+      <setting name="career_careerpassbasicconfiguration" serializeAs="String">
+        <value>キャリアパス基本設定</value>
+      </setting>
+      <setting name="career_seniorityindication" serializeAs="String">
+        <value>勤続年数（目安）</value>
+      </setting>
+      <setting name="career_submenu_trainingbatchinput" serializeAs="String">
+        <value>研修・訓練受講実績一括入力</value>
+      </setting>
+      <setting name="career_traininglist" serializeAs="String">
+        <value>研修・訓練一覧</value>
+      </setting>
+      <setting name="career_trainingdelete" serializeAs="String">
+        <value>研修・訓練の削除</value>
+      </setting>
+      <setting name="career_trainingsignupedit" serializeAs="String">
+        <value>研修・訓練の新規登録・編集</value>
+      </setting>
+      <setting name="career_trainingname" serializeAs="String">
+        <value>研修・訓練の名称</value>
+      </setting>
+      <setting name="career_workshopadd" serializeAs="String">
+        <value>研修会の追加</value>
+      </setting>
+      <setting name="career_workshopname" serializeAs="String">
+        <value>研修会名</value>
+      </setting>
+      <setting name="career_personalrelationship" serializeAs="String">
+        <value>個人別数値指標と職能基準の関連性設定</value>
+      </setting>
+      <setting name="career_memosave" serializeAs="String">
+        <value>こちらの内容で保存してよろしいですか？更新には管理者パスワードが必要です。</value>
+      </setting>
+      <setting name="career_highestrated" serializeAs="String">
+        <value>最高評価</value>
+      </setting>
+      <setting name="career_personalevaluation" serializeAs="String">
+        <value>さんの特別評価</value>
+      </setting>
+      <setting name="career_submenu_requirementsetting" serializeAs="String">
+        <value>資格・検定設定</value>
+      </setting>
+      <setting name="career_requirementlist" serializeAs="String">
+        <value>資格一覧</value>
+      </setting>
+      <setting name="career_requirementdelete" serializeAs="String">
+        <value>資格の削除</value>
+      </setting>
+      <setting name="career_requirementacquisition" serializeAs="String">
+        <value>資格の取得</value>
+      </setting>
+      <setting name="career_repuirementsignup" serializeAs="String">
+        <value>資格の新規登録・編集</value>
+      </setting>
+      <setting name="career_requirementsname" serializeAs="String">
+        <value>資格名</value>
+      </setting>
+      <setting name="career_hours" serializeAs="String">
+        <value>時間数</value>
+      </setting>
+      <setting name="career_promotioncriteria" serializeAs="String">
+        <value>システム上の昇格基準値</value>
+      </setting>
+      <setting name="career_memonotdelete" serializeAs="String">
+        <value>システムの性質上、一度作成した職能区分は削除することができません。</value>
+      </setting>
+      <setting name="career_practicaltest" serializeAs="String">
+        <value>実技</value>
+      </setting>
+      <setting name="career_practicaltestonly" serializeAs="String">
+        <value>実技のみ</value>
+      </setting>
+      <setting name="career_doing" serializeAs="String">
+        <value>していること</value>
+      </setting>
+      <setting name="career_memopointsremember" serializeAs="String">
+        <value>指導及び考課の際の留意点</value>
+      </setting>
+      <setting name="career_organaizer" serializeAs="String">
+        <value>主催者</value>
+      </setting>
+      <setting name="career_promotion" serializeAs="String">
+        <value>昇格</value>
+      </setting>
+      <setting name="career_indication" serializeAs="String">
+        <value>昇格・昇級目安</value>
+      </setting>
+      <setting name="career_promotiondegree" serializeAs="String">
+        <value>昇格の度合い</value>
+      </setting>
+      <setting name="career_advancement" serializeAs="String">
+        <value>昇級</value>
+      </setting>
+      <setting name="career_advancementdegree" serializeAs="String">
+        <value>昇級の度合い</value>
+      </setting>
+      <setting name="career_positionlist" serializeAs="String">
+        <value>職位一覧</value>
+      </setting>
+      <setting name="career_positionbroese" serializeAs="String">
+        <value>職位の閲覧・編集</value>
+      </setting>
+      <setting name="career_positionrequirement" serializeAs="String">
+        <value>職位の昇級・昇格要件の新規登録・編集</value>
+      </setting>
+      <setting name="career_positionsignup" serializeAs="String">
+        <value>職位の新規登録</value>
+      </setting>
+      <setting name="career_positionchangedate" serializeAs="String">
+        <value>職位変更日</value>
+      </setting>
+      <setting name="career_positionname" serializeAs="String">
+        <value>職位名</value>
+      </setting>
+      <setting name="career_submenu_positionbulkchanges" serializeAs="String">
+        <value>職員の職位一括変更</value>
+      </setting>
+      <setting name="career_occupationname" serializeAs="String">
+        <value>職能区分名</value>
+      </setting>
+      <setting name="career_responsibilitylist" serializeAs="String">
+        <value>職責一覧</value>
+      </setting>
+      <setting name="career_submenu_responsibilitycontrol" serializeAs="String">
+        <value>職責の管理と編集</value>
+      </setting>
+      <setting name="career_functionstandard" serializeAs="String">
+        <value>職能基準</value>
+      </setting>
+      <setting name="career_submenu_standerdevaluationcriteria" serializeAs="String">
+        <value>職能基準A～Dの判断基準確認/編集</value>
+      </setting>
+      <setting name="career_standardsrstrationeferencevalue" serializeAs="String">
+        <value>職能基準の登録</value>
+      </setting>
+      <setting name="career_memostandardsetting" serializeAs="String">
+        <value>職能基準を設定する職能区分をタブより選びます。</value>
+      </setting>
+      <setting name="career_memostandardsinput" serializeAs="String">
+        <value>職能基準を入力します。作成済みの職能区分×職能基準のセットより複製してから編集することもできます。</value>
+      </setting>
+      <setting name="career_professionaldivisionsignup" serializeAs="String">
+        <value>職能区分の新規登録・編集</value>
+      </setting>
+      <setting name="career_professionaldivision" serializeAs="String">
+        <value>職能区分を</value>
+      </setting>
+      <setting name="career_submenu_specialassessment" serializeAs="String">
+        <value>職能スキル特別評価</value>
+      </setting>
+      <setting name="career_memofunctionskill" serializeAs="String">
+        <value>職能スキルの特別評価をされる場合は、「評価の補正」欄で評価を補正してください。</value>
+      </setting>
+      <setting name="career_evaluationcriteria" serializeAs="String">
+        <value>職能スキルの評価基準設定</value>
+      </setting>
+      <setting name="career_skillevaluationphase" serializeAs="String">
+        <value>職能スキルの評価段階</value>
+      </setting>
+      <setting name="career_jobexperience" serializeAs="String">
+        <value>職務経験</value>
+      </setting>
+      <setting name="career_jobskill" serializeAs="String">
+        <value>職務スキル</value>
+      </setting>
+      <setting name="career_testregistration" serializeAs="String">
+        <value>新規園内検定登録</value>
+      </setting>
+      <setting name="career_requirementregistration" serializeAs="String">
+        <value>新規資格登録</value>
+      </setting>
+      <setting name="career_trainingsignup" serializeAs="String">
+        <value>新規研修・訓練登録</value>
+      </setting>
+      <setting name="career_submenu_staffsignup" serializeAs="String">
+        <value>新規職員登録</value>
+      </setting>
+      <setting name="career_occupationaldivisionsignup" serializeAs="String">
+        <value>新規職能区分登録</value>
+      </setting>
+      <setting name="career_totalresult" serializeAs="String">
+        <value>総合判定結果</value>
+      </setting>
+      <setting name="career_totalevaluationpoint" serializeAs="String">
+        <value>総評価点</value>
+      </setting>
+      <setting name="career_submenu_organizationchart" serializeAs="String">
+        <value>組織図生成</value>
+      </setting>
+      <setting name="career_thirdevaluation" serializeAs="String">
+        <value>第三位評価</value>
+      </setting>
+      <setting name="career_secondevaluation" serializeAs="String">
+        <value>第二位評価</value>
+      </setting>
+      <setting name="career_fourthevaluation" serializeAs="String">
+        <value>第四位評価</value>
+      </setting>
+      <setting name="career_retainingperiodindication" serializeAs="String">
+        <value>滞留期間（目安）</value>
+      </setting>
+      <setting name="career_retentionindication" serializeAs="String">
+        <value>滞留目安</value>
+      </setting>
+      <setting name="career_submenu_responsiblebulkchanges" serializeAs="String">
+        <value>担当クラス一括変更</value>
+      </setting>
+      <setting name="career_teamresult" serializeAs="String">
+        <value>システム評価</value>
+      </setting>
+      <setting name="career_submenu_teamevaluationitem" serializeAs="String">
+        <value>チーム評価項目</value>
+      </setting>
+      <setting name="career_teamrelationship" serializeAs="String">
+        <value>チーム別数値指標と職能基準の関連性設定</value>
+      </setting>
+      <setting name="career_application" serializeAs="String">
+        <value>適用</value>
+      </setting>
+      <setting name="career_onegradeup" serializeAs="String">
+        <value>1等級UP</value>
+      </setting>
+      <setting name="career_twogradeup" serializeAs="String">
+        <value>2等級UP</value>
+      </setting>
+      <setting name="career_registeredprofessionalstandards" serializeAs="String">
+        <value>登録されている職能基準</value>
+      </setting>
+      <setting name="career_correctionmethod" serializeAs="String">
+        <value>内容の修正</value>
+      </setting>
+      <setting name="career_experience" serializeAs="String">
+        <value>の経験を</value>
+      </setting>
+      <setting name="career_training" serializeAs="String">
+        <value>の研修・訓練を</value>
+      </setting>
+      <setting name="career_repuirement" serializeAs="String">
+        <value>の資格を</value>
+      </setting>
+      <setting name="career_inaugurationrequirements" serializeAs="String">
+        <value>の就任要件</value>
+      </setting>
+      <setting name="career_promotionconditions" serializeAs="String">
+        <value>の昇級要件</value>
+      </setting>
+      <setting name="career_reigned" serializeAs="String">
+        <value>の職位に在位していること</value>
+      </setting>
+      <setting name="career_meetskill" serializeAs="String">
+        <value>のスキルを満たしていること</value>
+      </setting>
+      <setting name="career_specialassessment" serializeAs="String">
+        <value>の特別評価</value>
+      </setting>
+      <setting name="career_edit" serializeAs="String">
+        <value>の編集</value>
+      </setting>
+      <setting name="career_writtentest" serializeAs="String">
+        <value>筆記</value>
+      </setting>
+      <setting name="career_writtenpractical" serializeAs="String">
+        <value>筆記・実技</value>
+      </setting>
+      <setting name="career_different" serializeAs="String">
+        <value>筆記・実技別</value>
+      </setting>
+      <setting name="career_onlywritten" serializeAs="String">
+        <value>筆記のみ</value>
+      </setting>
+      <setting name="career_questionrepresentation" serializeAs="String">
+        <value>評価シートの質疑表現（省略可）</value>
+      </setting>
+      <setting name="career_settinghint" serializeAs="String">
+        <value>評価設定のヒント</value>
+      </setting>
+      <setting name="career_evaluationcorrection" serializeAs="String">
+        <value>評価の補正</value>
+      </setting>
+      <setting name="career_promotionrequirements" serializeAs="String">
+        <value>への昇格要件</value>
+      </setting>
+      <setting name="career_createdcopy" serializeAs="String">
+        <value>他の職能区分×職能基準のコピーから作成</value>
+      </setting>
+      <setting name="career_topgradesetting" serializeAs="String">
+        <value>満点の設定</value>
+      </setting>
+      <setting name="career_goal" serializeAs="String">
+        <value>目標</value>
+      </setting>
+      <setting name="career_since" serializeAs="String">
+        <value>より</value>
+      </setting>
+      <setting name="career_acquires" serializeAs="String">
+        <value>取得していること</value>
+      </setting>
+      <setting name="career_taking" serializeAs="String">
+        <value>受講していること</value>
+      </setting>
+      <setting name="career_acquisition" serializeAs="String">
+        <value>取得日</value>
+      </setting>
+      <setting name="career_qualification" serializeAs="String">
+        <value>資格</value>
+      </setting>
+      <setting name="career_functionstandardlist" serializeAs="String">
+        <value>職能基準一覧</value>
+      </setting>
+      <setting name="career_sutafflist" serializeAs="String">
+        <value>職員一覧</value>
+      </setting>
+      <setting name="career_newtrainingregistration" serializeAs="String">
+        <value>新規研修・訓練登録</value>
+      </setting>
+      <setting name="career_hour" serializeAs="String">
+        <value>時</value>
+      </setting>
+      <setting name="career_minute" serializeAs="String">
+        <value>分</value>
+      </setting>
+      <setting name="career_selectall" serializeAs="String">
+        <value>全選択</value>
+      </setting>
+      <setting name="career_allcavcellation" serializeAs="String">
+        <value>全解除</value>
+      </setting>
+      <setting name="career_trainingform" serializeAs="String">
+        <value>研修形態</value>
+      </setting>
+      <setting name="career_on" serializeAs="String">
+        <value>OJT(On the Job Training)</value>
+      </setting>
+      <setting name="career_off" serializeAs="String">
+        <value>OFFJT(Off the Job Training)</value>
+      </setting>
+      <setting name="career_inside" serializeAs="String">
+        <value>園内</value>
+      </setting>
+      <setting name="career_outside" serializeAs="String">
+        <value>園外</value>
+      </setting>
+      <setting name="career_signup" serializeAs="String">
+        <value>の新規登録</value>
+      </setting>
+      <setting name="career_serviceyears" serializeAs="String">
+        <value>勤続年数など</value>
+      </setting>
+      <setting name="career_dellyearsindication" serializeAs="String">
+        <value>滞留年数の目安など</value>
+      </setting>
+      <setting name="career_gradedefault" serializeAs="String">
+        <value>00</value>
+      </setting>
+      <setting name="career_choiceworkexperience" serializeAs="String">
+        <value>職務経験条件の選択</value>
+      </setting>
+      <setting name="career_acceptancestandard" serializeAs="String">
+        <value>判定基準</value>
+      </setting>
+      <setting name="career_moreyears" serializeAs="String">
+        <value>年以上</value>
+      </setting>
+      <setting name="career_choicefunctionskill" serializeAs="String">
+        <value>職能スキルの判定条件の選択</value>
+      </setting>
+      <setting name="career_choicetrainingattendance" serializeAs="String">
+        <value>研修及び訓練の受講条件の選択</value>
+      </setting>
+      <setting name="career_choicequalificationacquisition" serializeAs="String">
+        <value>資格の取得条件の選択</value>
+      </setting>
+      <setting name="career_choiceapproval" serializeAs="String">
+        <value>園内検定条件の選択</value>
+      </setting>
+      <setting name="career_item" serializeAs="String">
+        <value>項目</value>
+      </setting>
+      <setting name="career_adovepoints" serializeAs="String">
+        <value>点以上</value>
+      </setting>
+      <setting name="career_workshopcategorynameedit" serializeAs="String">
+        <value>研修会カテゴリ名編集</value>
+      </setting>
+      <setting name="career_workshopcategoryname" serializeAs="String">
+        <value>研修会カテゴリ名</value>
+      </setting>
+      <setting name="career_star" serializeAs="String">
+        <value>★</value>
+      </setting>
+      <setting name="career_viewrelevance" serializeAs="String">
+        <value>関連性の表示</value>
+      </setting>
+      <setting name="career_impactevaluation" serializeAs="String">
+        <value>個人評価への影響度</value>
+      </setting>
+      <setting name="career_highrelation" serializeAs="String">
+        <value>関連性が高い</value>
+      </setting>
+      <setting name="career_lowrelation" serializeAs="String">
+        <value>関連性が低い</value>
+      </setting>
+      <setting name="career_relation" serializeAs="String">
+        <value>関連性</value>
+      </setting>
+      <setting name="career_fixcontents" serializeAs="String">
+        <value>※以下の内容で確定します。よろしいですか？</value>
+      </setting>
+      <setting name="career_certificateacquisitiondate" serializeAs="String">
+        <value>資格取得日</value>
+      </setting>
+      <setting name="career_qualificationadd" serializeAs="String">
+        <value>資格の追加</value>
+      </setting>
+      <setting name="career_licencebatchinput" serializeAs="String">
+        <value>資格取得実績一括入力</value>
+      </setting>
+      <setting name="career_practical" serializeAs="String">
+        <value>実　技</value>
+      </setting>
+      <setting name="career_functionclassificationlist" serializeAs="String">
+        <value>職能区分一覧</value>
+      </setting>
+      <setting name="feedback_title" serializeAs="String">
+        <value>フィードバック</value>
+      </setting>
+      <setting name="feedback_subtitle" serializeAs="String">
+        <value>Feedback</value>
+      </setting>
+      <setting name="feedback_submenu_sheetoutput" serializeAs="String">
+        <value>フィードバックシート出力</value>
+      </setting>
+      <setting name="feedback_submenu_interviewrecordviewedit" serializeAs="String">
+        <value>フィードバック面談記録の閲覧・編集</value>
+      </setting>
+      <setting name="feedback_jobcategory" serializeAs="String">
+        <value>主な職種</value>
+      </setting>
+      <setting name="feedback_sheetconfirm" serializeAs="String">
+        <value>シートの確定</value>
+      </setting>
+      <setting name="feedback_interviewrecord" serializeAs="String">
+        <value>フィードバック面談記録</value>
+      </setting>
+      <setting name="feedback_preview" serializeAs="String">
+        <value>印刷プレビュー</value>
+      </setting>
+      <setting name="feedback_memoviewedit" serializeAs="String">
+        <value>個人別の記録を閲覧・編集することができます。</value>
+      </setting>
+      <setting name="feedback_fileoutput" serializeAs="String">
+        <value>ファイル出力</value>
+      </setting>
+      <setting name="feedback_interviewer" serializeAs="String">
+        <value>面談担当者</value>
+      </setting>
+      <setting name="feedback_sheetpreview" serializeAs="String">
+        <value>フィードバックシートプレビュー</value>
+      </setting>
+      <setting name="feedback_interviewdetails" serializeAs="String">
+        <value>フィードバック面談内容</value>
+      </setting>
+      <setting name="feedback_mis" serializeAs="String">
+        <value>さん</value>
+      </setting>
+      <setting name="feedback_overwritesave" serializeAs="String">
+        <value>上書き保存</value>
+      </setting>
+      <setting name="manual_title" serializeAs="String">
+        <value>マネジメントの指針</value>
+      </setting>
+      <setting name="manual_subtitle" serializeAs="String">
+        <value>Guidelines for management</value>
+      </setting>
+      <setting name="marksheet_memounit" serializeAs="String">
+        <value>*単位を入力すると、０点指標・満点指標に単位が自動反映されます。</value>
+      </setting>
+      <setting name="marksheet_title" serializeAs="String">
+        <value>個人別の数値指標</value>
+      </setting>
+      <setting name="marksheet_submenu_viewedit" serializeAs="String">
+        <value>個人別の数値指標の閲覧・編集</value>
+      </setting>
+      <setting name="marksheet_submenu_resultsignup" serializeAs="String">
+        <value>個人別の数値指標の新規登録</value>
+      </setting>
+      <setting name="marksheet_submenu_resultinput" serializeAs="String">
+        <value>個人別の数値指標結果入力</value>
+      </setting>
+      <setting name="marksheet_submenu_resulthistoryview" serializeAs="String">
+        <value>個人別の数値指標結果履歴閲覧</value>
+      </setting>
+      <setting name="marksheet_submenu_graphviewoutput" serializeAs="String">
+        <value>個人別の数値指標推移グラフ閲覧・印刷</value>
+      </setting>
+      <setting name="marksheet_staffname" serializeAs="String">
+        <value>職員名</value>
+      </setting>
+      <setting name="marksheet_score" serializeAs="String">
+        <value>得点</value>
+      </setting>
+      <setting name="marksheet_edit" serializeAs="String">
+        <value>編集　</value>
+      </setting>
+      <setting name="marksheet_refiningcondition" serializeAs="String">
+        <value>絞込条件</value>
+      </setting>
+      <setting name="question_title" serializeAs="String">
+        <value>利用者アンケート</value>
+      </setting>
+      <setting name="question_subtitle" serializeAs="String">
+        <value>Guardian questionnaire</value>
+      </setting>
+      <setting name="format_title" serializeAs="String">
+        <value>各種フォーマット</value>
+      </setting>
+      <setting name="format_subtitle" serializeAs="String">
+        <value>Various formats</value>
+      </setting>
+      <setting name="setting_title" serializeAs="String">
+        <value>基本設定</value>
+      </setting>
+      <setting name="setting_subtitle" serializeAs="String">
+        <value>Basic settings</value>
+      </setting>
+      <setting name="setting_menu_account" serializeAs="String">
+        <value>アカウント設定</value>
+      </setting>
+      <setting name="setting_menu_facikitytype" serializeAs="String">
+        <value>施設種別と昇降格設定</value>
+      </setting>
+      <setting name="setting_submenu_impotexport" serializeAs="String">
+        <value>インポート・エクスポート</value>
+      </setting>
+      <setting name="setting_submenu_accountinfo" serializeAs="String">
+        <value>アカウント情報</value>
+      </setting>
+      <setting name="setting_facikityid" serializeAs="String">
+        <value>施設ID</value>
+      </setting>
+      <setting name="setting_corporatename" serializeAs="String">
+        <value>法人名</value>
+      </setting>
+      <setting name="setting_facilityname" serializeAs="String">
+        <value>施設名</value>
+      </setting>
+      <setting name="setting_location" serializeAs="String">
+        <value>所在地</value>
+      </setting>
+      <setting name="setting_prefectures" serializeAs="String">
+        <value>都道府県</value>
+      </setting>
+      <setting name="setting_municipality" serializeAs="String">
+        <value>市区町村</value>
+      </setting>
+      <setting name="setting_usermanagement" serializeAs="String">
+        <value>ユーザー管理</value>
+      </setting>
+      <setting name="setting_id" serializeAs="String">
+        <value>ID</value>
+      </setting>
+      <setting name="setting_password" serializeAs="String">
+        <value>パスワード</value>
+      </setting>
+      <setting name="setting_systemadministrator" serializeAs="String">
+        <value>システム管理者</value>
+      </setting>
+      <setting name="setting_facilitytype" serializeAs="String">
+        <value>施設種別</value>
+      </setting>
+      <setting name="setting_memonamingoptimisation" serializeAs="String">
+        <value>マニュアルなどで表現される名称を最適化するために設定します。</value>
+      </setting>
+      <setting name="setting_skillexception" serializeAs="String">
+        <value>職能スキルの特例昇降格</value>
+      </setting>
+      <setting name="setting_proprietyskill" serializeAs="String">
+        <value>特別な事由による職能スキルの昇降格処理の可否を設定します。</value>
+      </setting>
+      <setting name="setting_statusupdown" serializeAs="String">
+        <value>職位の特例昇降格</value>
+      </setting>
+      <setting name="setting_proprietystatus" serializeAs="String">
+        <value>特別な事由による職位の昇降格処理の可否を設定します。</value>
+      </setting>
+      <setting name="setting_careertransfer" serializeAs="String">
+        <value>法人内での移動の際、これまでのキャリア情報を転入させることができます。</value>
+      </setting>
+      <setting name="setting_careermovingout" serializeAs="String">
+        <value>法人内での移動の際、これまでのキャリア情報を転出させることができます。</value>
+      </setting>
+      <setting name="setting_administrator" serializeAs="String">
+        <value>管理者</value>
+      </setting>
+      <setting name="setting_promotiononly" serializeAs="String">
+        <value>昇格のみ許可</value>
+      </setting>
+      <setting name="setting_allowboth" serializeAs="String">
+        <value>昇格・降格ともに許可</value>
+      </setting>
+      <setting name="setting_nursery" serializeAs="String">
+        <value>保育園</value>
+      </setting>
+      <setting name="setting_daycare" serializeAs="String">
+        <value>保育所</value>
+      </setting>
+      <setting name="setting_childrengarden" serializeAs="String">
+        <value>こども園</value>
+      </setting>
+      <setting name="setting_handlingmoveout" serializeAs="String">
+        <value>転出後の扱い</value>
+      </setting>
+      <setting name="setting_export" serializeAs="String">
+        <value>エクスポート</value>
+      </setting>
+      <setting name="setting_memonewevaluation" serializeAs="String">
+        <value>新しい評価期間を追加する際、これまでの評価期間におけるデータ入力ができなくなってしまいますので、ご注意ください。</value>
+      </setting>
+      <setting name="setting_evaluationsetting" serializeAs="String">
+        <value>評価期間の設定</value>
+      </setting>
+      <setting name="setting_uptonowevaluation" serializeAs="String">
+        <value>これまでの評価期間</value>
+      </setting>
+      <setting name="setting_teamclassificationlist" serializeAs="String">
+        <value>チーム分類の一覧</value>
+      </setting>
+      <setting name="setting_staffclassificationlist" serializeAs="String">
+        <value>職員分類の一覧</value>
+      </setting>
+      <setting name="setting_menu_evaluationsetting" serializeAs="String">
+        <value>評価期間設定</value>
+      </setting>
+      <setting name="setting_menu_teamclassificationsetting" serializeAs="String">
+        <value>チーム分類設定</value>
+      </setting>
+      <setting name="setting_menu_staffclassificationsetting" serializeAs="String">
+        <value>職員分類設定</value>
+      </setting>
+      <setting name="common_colon" serializeAs="String">
+        <value>：</value>
+      </setting>
+      <setting name="common_percent" serializeAs="String">
+        <value>％</value>
+      </setting>
+      <setting name="common_fromto" serializeAs="String">
+        <value>～</value>
+      </setting>
+      <setting name="common_zeroindex" serializeAs="String">
+        <value>0点指標</value>
+      </setting>
+      <setting name="common_csvoutput" serializeAs="String">
+        <value>CSV出力</value>
+      </setting>
+      <setting name="common_lpoint" serializeAs="String">
+        <value>POINT</value>
+      </setting>
+      <setting name="common_spoint" serializeAs="String">
+        <value>point</value>
+      </setting>
+      <setting name="common_cancel" serializeAs="String">
+        <value>キャンセル</value>
+      </setting>
+      <setting name="common_subleader" serializeAs="String">
+        <value>サブリーダー</value>
+      </setting>
+      <setting name="common_whole" serializeAs="String">
+        <value>すべて</value>
+      </setting>
+      <setting name="common_teamclassification" serializeAs="String">
+        <value>チーム種別</value>
+      </setting>
+      <setting name="common_teamname" serializeAs="String">
+        <value>チーム名</value>
+      </setting>
+      <setting name="common_free" serializeAs="String">
+        <value>フリー</value>
+      </setting>
+      <setting name="common_maincontent" serializeAs="String">
+        <value>メインコンテンツ</value>
+      </setting>
+      <setting name="common_menu" serializeAs="String">
+        <value>メニュー</value>
+      </setting>
+      <setting name="common_member" serializeAs="String">
+        <value>メンバー</value>
+      </setting>
+      <setting name="common_leader" serializeAs="String">
+        <value>リーダー</value>
+      </setting>
+      <setting name="common_wo" serializeAs="String">
+        <value>を</value>
+      </setting>
+      <setting name="common_batchinput" serializeAs="String">
+        <value>一括入力枠</value>
+      </setting>
+      <setting name="common_readedit" serializeAs="String">
+        <value>閲覧・編集</value>
+      </setting>
+      <setting name="common_verification" serializeAs="String">
+        <value>園内検定</value>
+      </setting>
+      <setting name="common_confirm" serializeAs="String">
+        <value>確 定</value>
+      </setting>
+      <setting name="common_temporaryworker" serializeAs="String">
+        <value>休職者</value>
+      </setting>
+      <setting name="common_requiredvalue" serializeAs="String">
+        <value>求める値</value>
+      </setting>
+      <setting name="common_yearsservice" serializeAs="String">
+        <value>勤続年数</value>
+      </setting>
+      <setting name="common_calculationrule" serializeAs="String">
+        <value>計算ルール</value>
+      </setting>
+      <setting name="common_month" serializeAs="String">
+        <value>月</value>
+      </setting>
+      <setting name="common_search" serializeAs="String">
+        <value>検索</value>
+      </setting>
+      <setting name="common_trainingdrills" serializeAs="String">
+        <value>研修・訓練</value>
+      </setting>
+      <setting name="common_currentposition" serializeAs="String">
+        <value>現職位</value>
+      </setting>
+      <setting name="common_positionstayingperiod" serializeAs="String">
+        <value>現職位滞留期間</value>
+      </setting>
+      <setting name="common_incumbent" serializeAs="String">
+        <value>現職者</value>
+      </setting>
+      <setting name="common_regular" serializeAs="String">
+        <value>現職者（正規）</value>
+      </setting>
+      <setting name="common_employmentsituation" serializeAs="String">
+        <value>雇用状況</value>
+      </setting>
+      <setting name="common_name" serializeAs="String">
+        <value>氏名</value>
+      </setting>
+      <setting name="common_qualificationtest" serializeAs="String">
+        <value>資格・検定</value>
+      </setting>
+      <setting name="common_mainteam" serializeAs="String">
+        <value>主な所属チーム</value>
+      </setting>
+      <setting name="common_position" serializeAs="String">
+        <value>職位</value>
+      </setting>
+      <setting name="common_stafflist" serializeAs="String">
+        <value>職員一覧（職員情報の閲覧・編集）</value>
+      </setting>
+      <setting name="common_category" serializeAs="String">
+        <value>職種</value>
+      </setting>
+      <setting name="common_responsibility" serializeAs="String">
+        <value>職責</value>
+      </setting>
+      <setting name="common_functionclassification" serializeAs="String">
+        <value>職能区分</value>
+      </setting>
+      <setting name="common_indicator" serializeAs="String">
+        <value>数値指標</value>
+      </setting>
+      <setting name="common_indicatordelete" serializeAs="String">
+        <value>数値指標の削除</value>
+      </setting>
+      <setting name="common_indicatorsingnup" serializeAs="String">
+        <value>数値指標の新規登録</value>
+      </setting>
+      <setting name="common_indicatorlist" serializeAs="String">
+        <value>数値指標一覧</value>
+      </setting>
+      <setting name="common_indicatorregistratiom" serializeAs="String">
+        <value>数値指標登録</value>
+      </setting>
+      <setting name="common_indicatoredit" serializeAs="String">
+        <value>数値指標編集</value>
+      </setting>
+      <setting name="common_achievement" serializeAs="String">
+        <value>成果（％）</value>
+      </setting>
+      <setting name="common_overallpoint" serializeAs="String">
+        <value>総合点</value>
+      </setting>
+      <setting name="common_retiree" serializeAs="String">
+        <value>退職者</value>
+      </setting>
+      <setting name="common_unit" serializeAs="String">
+        <value>単位</value>
+      </setting>
+      <setting name="common_point" serializeAs="String">
+        <value>点</value>
+      </setting>
+      <setting name="common_inputmethod" serializeAs="String">
+        <value>入力方法</value>
+      </setting>
+      <setting name="common_scoring" serializeAs="String">
+        <value>配点</value>
+      </setting>
+      <setting name="common_remarks" serializeAs="String">
+        <value>備考</value>
+      </setting>
+      <setting name="common_evaluationviewpoint" serializeAs="String">
+        <value>評価観点</value>
+      </setting>
+      <setting name="common_evaluationperiod" serializeAs="String">
+        <value>評価期間</value>
+      </setting>
+      <setting name="common_average" serializeAs="String">
+        <value>平均</value>
+      </setting>
+      <setting name="common_return" serializeAs="String">
+        <value>戻 る</value>
+      </setting>
+      <setting name="common_fullmarkindex" serializeAs="String">
+        <value>満点指標</value>
+      </setting>
+      <setting name="common_sumtotal" serializeAs="String">
+        <value>合計</value>
+      </setting>
+      <setting name="common_input" serializeAs="String">
+        <value>入力してください</value>
+      </setting>
+      <setting name="common_choose" serializeAs="String">
+        <value>選択してください</value>
+      </setting>
+      <setting name="common_either" serializeAs="String">
+        <value>いずれか</value>
+      </setting>
+      <setting name="common_postalcodedefault" serializeAs="String">
+        <value>000-0000</value>
+      </setting>
+      <setting name="common_phonenumberdefault" serializeAs="String">
+        <value>000-0000-0000</value>
+      </setting>
+      <setting name="common_agedefault" serializeAs="String">
+        <value>000</value>
+      </setting>
+      <setting name="common_datedefault" serializeAs="String">
+        <value>0000/00/00</value>
+      </setting>
+      <setting name="common_deletepw" serializeAs="String">
+        <value>削除用パスワード入力</value>
+      </setting>
+      <setting name="common_memodeletepw" serializeAs="String">
+        <value>*削除にはパスワードが必要です。</value>
+      </setting>
+      <setting name="common_password" serializeAs="String">
+        <value>パスワード</value>
+      </setting>
+      <setting name="common_workshopcategory" serializeAs="String">
+        <value>研修会カテゴリ</value>
+      </setting>
+      <setting name="common_searchclear" serializeAs="String">
+        <value>検索条件をクリア</value>
+      </setting>
+      <setting name="common_monthyear" serializeAs="String">
+        <value>0000/00</value>
+      </setting>
+      <setting name="common_confirimationpw" serializeAs="String">
+        <value>確定用パスワード入力</value>
+      </setting>
+      <setting name="common_memoconfirmationpw" serializeAs="String">
+        <value>*確定にはパスワードが必要です。</value>
+      </setting>
+      <setting name="common_printing" serializeAs="String">
+        <value>印 刷</value>
+      </setting>
+      <setting name="common_hyphen" serializeAs="String">
+        <value>-</value>
+      </setting>
+      <setting name="common_teamkind" serializeAs="String">
+        <value>職員分類</value>
+      </setting>
+      <setting name="common_teamtype" serializeAs="String">
+        <value>チーム分類</value>
+      </setting>
+      <setting name="common_edit" serializeAs="String">
+        <value>編集</value>
+      </setting>
+      <setting name="common_years" serializeAs="String">
+        <value>年</value>
+      </setting>
+      <setting name="common_delete" serializeAs="String">
+        <value>削除</value>
+      </setting>
+      <setting name="login_id" serializeAs="String">
+        <value>ID：</value>
+      </setting>
+      <setting name="login_pw" serializeAs="String">
+        <value>PW：</value>
+      </setting>
+      <setting name="team_description" serializeAs="String">
+        <value>基本的な評価対象となるクラスやチームの新規登録、メンバーの編集を行います。
+チームの役割・目的・使命に沿ったチーム目標を与え、評価の指標を定めます。
+登録されたメンバーは、その期間毎のメンバー経歴として保存されます。
+一人が複数のクラス・チームに登録する事も可能です。</value>
+      </setting>
+      <setting name="team_menu_teamsignup_x" serializeAs="String">
+        <value>チームの
+新規登録</value>
+      </setting>
+      <setting name="team_menu_teambrowse_x" serializeAs="String">
+        <value>  チームの
+閲覧・編集</value>
+      </setting>
+      <setting name="team_menu_teamconstitution_x" serializeAs="String">
+        <value>チーム構成経歴
+　　  閲覧</value>
+      </setting>
+      <setting name="team_annotation" serializeAs="String">
+        <value>*異年齢児クラスの場合は「3,4,5」の
+ようにコンマで区切ってご入力ください。</value>
+      </setting>
+      <setting name="team_performance" serializeAs="String">
+        <value>チーム実績
+評価</value>
+      </setting>
+      <setting name="team_numericalindexgroup" serializeAs="String">
+        <value>数値指標
+グループ</value>
+      </setting>
+      <setting name="team_formationdate" serializeAs="String">
+        <value>このメンバーに
+なった日</value>
+      </setting>
+      <setting name="team_selectionfield" serializeAs="String">
+        <value>メンバー
+選択欄</value>
+      </setting>
+      <setting name="team_returnteamlist" serializeAs="String">
+        <value>チーム一覧へ
+　　戻る</value>
+      </setting>
+      <setting name="team_nottargeted" serializeAs="String">
+        <value>評価対象としない</value>
+      </setting>
+      <setting name="team_yearold" serializeAs="String">
+        <value>歳児</value>
+      </setting>
+      <setting name="manage_submenu_graph" serializeAs="String">
+        <value>クラスごとの数値指標推移グラフ
+閲覧・印刷</value>
+      </setting>
+      <setting name="manage_submenu_graph_x" serializeAs="String">
+        <value>クラスごとの数値指標推移グラフ
+　　　　 　閲覧・印刷</value>
+      </setting>
+      <setting name="manage_menu_resultbrows_x" serializeAs="String">
+        <value>クラスごとの結果履歴
+　　　　閲覧</value>
+      </setting>
+      <setting name="manage_menu_graph" serializeAs="String">
+        <value>クラスごとの数値指標
+推移グラフ閲覧・印刷</value>
+      </setting>
+      <setting name="manage_transitionoverallpoints" serializeAs="String">
+        <value>数値指標総合点の推移：</value>
+      </setting>
+      <setting name="manage_menu_signup" serializeAs="String">
+        <value>数値指標の
+ 新規登録</value>
+      </setting>
+      <setting name="manage_submenu_browse_x" serializeAs="String">
+        <value>数値指標の
+閲覧・編集</value>
+      </setting>
+      <setting name="manage_copy" serializeAs="String">
+        <value>コピーして
+ 新規作成</value>
+      </setting>
+      <setting name="manage_menu_groupbrowse_x" serializeAs="String">
+        <value>数値指標グループの
+　　閲覧・編集</value>
+      </setting>
+      <setting name="manage_numericalindexgroupsignup_x" serializeAs="String">
+        <value>数値指標グループの
+　　 新規登録</value>
+      </setting>
+      <setting name="staff_description" serializeAs="String">
+        <value>園で働く職員の基本情報をはじめ、どのような役割を担ってきたか、資格の取得経緯、研修の受講履歴などを記録します。
+簡単な職員管理システムとしての使い方を併用する場合は、職員の情報を細かく入力することもできます。
+職位変更や研修受講、園内検定結果は、複数の職員を一斉に変更する事もできます。</value>
+      </setting>
+      <setting name="staff_marriage" serializeAs="String">
+        <value>配偶者の
+有無</value>
+      </setting>
+      <setting name="staff_motivation" serializeAs="String">
+        <value>志望動機
+ (応募時)</value>
+      </setting>
+      <setting name="staff_menu_stafflist" serializeAs="String">
+        <value>　 　　職員一覧
+(職員情報の閲覧・編集)</value>
+      </setting>
+      <setting name="staff_telephone" serializeAs="String">
+        <value>電　話</value>
+      </setting>
+      <setting name="staff_dependentsresponsibility" serializeAs="String">
+        <value>扶養
+責任</value>
+      </setting>
+      <setting name="staff_hope" serializeAs="String">
+        <value>本人の希望
+  (応募時)</value>
+      </setting>
+      <setting name="staff_request" serializeAs="String">
+        <value>履歴書もしくは面接時の希望内容
+希望する職務内容・条件など</value>
+      </setting>
+      <setting name="career_memostandardscopy" serializeAs="String">
+        <value>「職能基準をコピー」をクリックすると、「職能基準の登録」
+に転記されます</value>
+      </setting>
+      <setting name="career_point" serializeAs="String">
+        <value>Point</value>
+      </setting>
+      <setting name="career_memonewposition" serializeAs="String">
+        <value>新しい職位
+・太字：昇格した場合
+・赤字：新規登録の場合、基本設定範囲を越えて特例昇降格した場合
+・現状維持の場合</value>
+      </setting>
+      <setting name="career_testdate" serializeAs="String">
+        <value>園内検定の
+実施日</value>
+      </setting>
+      <setting name="career_menu_testsinup" serializeAs="String">
+        <value>　園内検定の
+新規登録・編集</value>
+      </setting>
+      <setting name="career_memotest" serializeAs="String">
+        <value>園内検定を上書き保存・削除した場合、過去に実施された検定内容にも影響がございますので、
+検定制度見直しの際は、新しく登録されることを推奨いたします。</value>
+      </setting>
+      <setting name="career_expectedduty" serializeAs="String">
+        <value>期待される
+職責</value>
+      </setting>
+      <setting name="career_expectedrole" serializeAs="String">
+        <value>期待される
+役割</value>
+      </setting>
+      <setting name="career_description" serializeAs="String">
+        <value>キャリアパスにおいて重要な部分である職位をはじめ、職員の職能基準、業務において関係する資格を管理します。
+職位の一括変更(昇級昇格の判断)も職位設定にて決定できます。</value>
+      </setting>
+      <setting name="career_grade" serializeAs="String">
+        <value>等　級</value>
+      </setting>
+      <setting name="career_trainingenddate" serializeAs="String">
+        <value>研修・訓練
+受講終了日</value>
+      </setting>
+      <setting name="career_menu_trainingbatchinput" serializeAs="String">
+        <value>研修・訓練受講実績
+　　 一括入力</value>
+      </setting>
+      <setting name="career_menu_trainingsignup" serializeAs="String">
+        <value> 研修・訓練の
+新規登録・編集</value>
+      </setting>
+      <setting name="career_memotrainingdelete" serializeAs="String">
+        <value>研修・訓練を削除した場合、
+同研修・訓練を受講扱いとなっている職員・職責・職位からも研修・訓練の内容が削除されますのでご注意ください。</value>
+      </setting>
+      <setting name="career_trainingstudents" serializeAs="String">
+        <value>研修及び訓練の
+受講</value>
+      </setting>
+      <setting name="career_workshopcategory_x" serializeAs="String">
+        <value>研修会
+カテゴリ</value>
+      </setting>
+      <setting name="career_memodesignated" serializeAs="String">
+        <value>こちらの項目は、システム管理者専用の設定画面です。更新には管理者のパスワードが必要です。
+評価に大きく影響する画面ですので、設定する際には十分お気をつけてください。</value>
+      </setting>
+      <setting name="career_criteriastaff" serializeAs="String">
+        <value>この職能基準を
+使用している職員</value>
+      </setting>
+      <setting name="career_evaluationpast" serializeAs="String">
+        <value>これまでの評価
+(取得時期）</value>
+      </setting>
+      <setting name="career_menu_requirementsignup" serializeAs="String">
+        <value>　　資格の
+新規登録・編集</value>
+      </setting>
+      <setting name="career_memorequirements" serializeAs="String">
+        <value>資格を削除した場合、
+同資格を取得扱いとなっている職員・職責・職位からも資格内容が削除されますのでご注意ください。</value>
+      </setting>
+      <setting name="career_time" serializeAs="String">
+        <value>時間</value>
+      </setting>
+      <setting name="career_positionindication" serializeAs="String">
+        <value>職位(目安）</value>
+      </setting>
+      <setting name="career_submenu_positionsetting" serializeAs="String">
+        <value>職位設定(職位の名称/段階）</value>
+      </setting>
+      <setting name="career_menu_positionrequirement" serializeAs="String">
+        <value>職位の昇級・昇格要件の
+　　新規登録・編集</value>
+      </setting>
+      <setting name="career_positionremarks" serializeAs="String">
+        <value>職位名に
+関する備考</value>
+      </setting>
+      <setting name="career_menu_positionbulkchanges" serializeAs="String">
+        <value>職員の職位
+ 一括変更</value>
+      </setting>
+      <setting name="career_menu_standardssmall_x" serializeAs="String">
+        <value>職能基準(小項目)の
+　新規登録・編集</value>
+      </setting>
+      <setting name="career_menu_standardssmall" serializeAs="String">
+        <value>職能基準(小項目)の新規登録・編集</value>
+      </setting>
+      <setting name="career_menu_standardsmedium" serializeAs="String">
+        <value>職能基準(中項目)の
+　新規登録・編集</value>
+      </setting>
+      <setting name="career_standardsmedium" serializeAs="String">
+        <value>職能基準(中項目)の新規登録・編集</value>
+      </setting>
+      <setting name="career_standardsreferencevalue" serializeAs="String">
+        <value>職能基準数
+（中項目）</value>
+      </setting>
+      <setting name="career_standardscopy" serializeAs="String">
+        <value>職能基準を
+　コピー</value>
+      </setting>
+      <setting name="career_menu_professionaldivisionsignup" serializeAs="String">
+        <value>　職能区分の
+新規登録・編集</value>
+      </setting>
+      <setting name="career_menu_specialassessment" serializeAs="String">
+        <value>職能スキル
+ 特別評価</value>
+      </setting>
+      <setting name="career_functionskillability" serializeAs="String">
+        <value>職能スキルの
+能力判定</value>
+      </setting>
+      <setting name="career_functionskillabilitydecision" serializeAs="String">
+        <value>職能スキルの
+判定</value>
+      </setting>
+      <setting name="career_functionskillsetting" serializeAs="String">
+        <value>職能スキルの
+評価基準設定</value>
+      </setting>
+      <setting name="career_synthesis" serializeAs="String">
+        <value>総合（筆記・実技を総合的に表す場合、筆記のみ、実技のみの場合はこちらを選択してください）</value>
+      </setting>
+      <setting name="career_target" serializeAs="String">
+        <value>対　　象</value>
+      </setting>
+      <setting name="career_menu_teamrelationship" serializeAs="String">
+        <value>　チーム別数値指標と
+職能基準の関連性設定</value>
+      </setting>
+      <setting name="career_ideally" serializeAs="String">
+        <value>理想的
+な姿</value>
+      </setting>
+      <setting name="career_menu_personalrelationship" serializeAs="String">
+        <value>　個人別数値指標と
+職能基準の関連性設定</value>
+      </setting>
+      <setting name="career_menu_licencebatchinput" serializeAs="String">
+        <value>資格取得実績
+　一括入力</value>
+      </setting>
+      <setting name="career_menu_testbatchinput" serializeAs="String">
+        <value>園内検定結果
+　一括入力</value>
+      </setting>
+      <setting name="career_writing" serializeAs="String">
+        <value>筆　記</value>
+      </setting>
+      <setting name="career_one" serializeAs="String">
+        <value>1つ</value>
+      </setting>
+      <setting name="career_two" serializeAs="String">
+        <value>2つ</value>
+      </setting>
+      <setting name="career_skill" serializeAs="String">
+        <value>スキルを</value>
+      </setting>
+      <setting name="career_tomeet" serializeAs="String">
+        <value>満たしていること</value>
+      </setting>
+      <setting name="career_remark" serializeAs="String">
+        <value>備　考</value>
+      </setting>
+      <setting name="feedback_description" serializeAs="String">
+        <value>クラス・チームや職員の評価を視覚化したフィードバックシートとして表現します。
+考課面談やミーティングの際、印刷して振り返りの材料としてご活用ください。</value>
+      </setting>
+      <setting name="feedback_menu_sheetoutput" serializeAs="String">
+        <value>フィードバックシート
+　　　　出力</value>
+      </setting>
+      <setting name="feedback_memosheetgeneration" serializeAs="String">
+        <value>フィードバックシートを生成したい評価期間及び職員を選択し、「印刷プレビュー」を押してください。
+また、「フィードバック面談記録」より個人別の記録を閲覧・編集することができます。</value>
+      </setting>
+      <setting name="feedback_overwritesave_x" serializeAs="String">
+        <value>上書き
+ 保存</value>
+      </setting>
+      <setting name="feedback_interviewdate" serializeAs="String">
+        <value>フィードバック
+面談日</value>
+      </setting>
+      <setting name="feedback_nextresponsibility" serializeAs="String">
+        <value>次に目指す
+職責</value>
+      </setting>
+      <setting name="feedback_preview_x" serializeAs="String">
+        <value>　 印刷
+プレビュー</value>
+      </setting>
+      <setting name="manual_description" serializeAs="String">
+        <value>チームマネジメントを行う上で、チームをマネジメントする職員が備えるべき内容を記載したマニュアルをダウンロードできます。
+印刷してバインダー、またはタブレット端末などで閲覧ください。</value>
+      </setting>
+      <setting name="marksheet_copycreatenew" serializeAs="String">
+        <value>コピーして
+新規作成</value>
+      </setting>
+      <setting name="marksheet_description" serializeAs="String">
+        <value>園で働く職員の基本情報をはじめ、どのような役割を担ってきたか、資格の取得経緯、研修の受講履歴などを記録します。
+簡単な職員管理システムとしての使い方を併用する場合は、職員の情報を細かく入力することもできます。
+職位変更や研修受講、園内検定結果は、複数の職員を一斉に変更する事もできます。</value>
+      </setting>
+      <setting name="marksheet_menu_resultinput" serializeAs="String">
+        <value>個人別の数値指標
+　　結果入力</value>
+      </setting>
+      <setting name="marksheet_menu_resulthistoryview" serializeAs="String">
+        <value>個人別の数値指標
+　結果履歴閲覧</value>
+      </setting>
+      <setting name="marksheet_menu_graphviewoutput" serializeAs="String">
+        <value>　個人別の数値指標
+推移グラフ閲覧・印刷</value>
+      </setting>
+      <setting name="marksheet_menu_viewedit" serializeAs="String">
+        <value>個人別の数値指標の
+　　閲覧・編集</value>
+      </setting>
+      <setting name="marksheet_graphviewoutput" serializeAs="String">
+        <value>個人別の数値指標推移グラフ
+　　　　閲覧・印刷</value>
+      </setting>
+      <setting name="marksheet_menu_resultsignup_x" serializeAs="String">
+        <value>個人別の数値指標の
+　　 新規登録</value>
+      </setting>
+      <setting name="question_description" serializeAs="String">
+        <value>利用者(保護者)に対してのアンケートを行い、利用者目線から見た「保育・サービスの質」を定点観測します。</value>
+      </setting>
+      <setting name="format_description" serializeAs="String">
+        <value>職員個人のキャリアプランにおける現状や課題、目指すべきものをわかりやすくしたり、チームをマネジメントする上でのツールとなる、エクセル形式でのフォーマットです。
+印刷して直接書き込んでも、データから入力しても使えます。</value>
+      </setting>
+      <setting name="setting_description" serializeAs="String">
+        <value>施設の情報など、基本的な情報の設定です。
+データのバックアップやソフトウェアの最新版アップデートもこちらからできます。</value>
+      </setting>
+      <setting name="setting_menu_impotexpot" serializeAs="String">
+        <value>インポート・
+エクスポート</value>
+      </setting>
+      <setting name="setting_staffimpot" serializeAs="String">
+        <value>職員のインポート</value>
+      </setting>
+      <setting name="setting_staffexpot" serializeAs="String">
+        <value>職員のエクスポート</value>
+      </setting>
+      <setting name="setting_stafftransfer" serializeAs="String">
+        <value>職員の転入</value>
+      </setting>
+      <setting name="setting_staffmovingout" serializeAs="String">
+        <value>職員の転出</value>
+      </setting>
+      <setting name="common_confirmnext" serializeAs="String">
+        <value>確定して
+　次へ</value>
+      </setting>
+      <setting name="marksheet_subtitle" serializeAs="String">
+        <value>Numerical index of each staff</value>
+      </setting>
+      <setting name="career_responsibilityrequirement" serializeAs="String">
+        <value>職責の就任要件の新規登録・編集</value>
+      </setting>
+      <setting name="common_mustinput" serializeAs="String">
+        <value>入力してください(必須)</value>
+      </setting>
+      <setting name="manage_description" serializeAs="String">
+        <value>クラス及びチーム成果指標を設定します。
+目標となる項目をはじめ、その結果をどう採点(０点～満点)するかの単位と指標を登録してください。
+期間ごとの定点観測を行う事を主な目的としているため、設定時および変更時には慎重に検討ください。
+結果の入力もこちらから行います。</value>
+      </setting>
+      <setting name="career_menu_responsibilityrequirement" serializeAs="String">
+        <value>職責の就任要件の
+ 新規登録・編集</value>
+      </setting>
+    </TMS1.Properties.Settings>
+  </applicationSettings>
+  <runtime>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="System.Data.SQLite" publicKeyToken="db937bc2d44ff139" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-1.0.103.0" newVersion="1.0.103.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+  </runtime>
+  <connectionStrings>
+    <add name="Model1" connectionString="data source=(LocalDb)\v11.0;initial catalog=TMS1.Model1;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework" providerName="System.Data.SqlClient" /><add name="tmsEntities" connectionString="metadata=res://*/Model1.csdl|res://*/Model1.ssdl|res://*/Model1.msl;provider=System.Data.SQLite.EF6;provider connection string=&quot;data source=..\..\..\..\tms.db&quot;" providerName="System.Data.EntityClient" /><add name="tmsEntities1" connectionString="metadata=res://*/EDM.Model1.csdl|res://*/EDM.Model1.ssdl|res://*/EDM.Model1.msl;provider=System.Data.SQLite.EF6;provider connection string=&quot;data source=..\..\..\..\tms.db&quot;" providerName="System.Data.EntityClient" /><add name="tmsEntities2" connectionString="metadata=res://*/EDM.Model1.csdl|res://*/EDM.Model1.ssdl|res://*/EDM.Model1.msl;provider=System.Data.SQLite.EF6;provider connection string=&quot;data source=..\..\..\..\tms.db&quot;" providerName="System.Data.EntityClient" /></connectionStrings>
+  <system.data>
+    <DbProviderFactories>
+      <remove invariant="System.Data.SQLite" />
+      <add name="SQLite Data Provider" invariant="System.Data.SQLite" description=".NET Framework Data Provider for SQLite (Entity Framework 6)" type="System.Data.SQLite.SQLiteFactory, System.Data.SQLite" />
+      <remove invariant="System.Data.SQLite.EF6" />
+      <add name="SQLite Data Provider (Entity Framework 6)" invariant="System.Data.SQLite.EF6" description=".NET Framework Data Provider for SQLite (Entity Framework 6)" type="System.Data.SQLite.EF6.SQLiteProviderFactory, System.Data.SQLite.EF6" />
+    </DbProviderFactories>
+  </system.data>
+</configuration>
