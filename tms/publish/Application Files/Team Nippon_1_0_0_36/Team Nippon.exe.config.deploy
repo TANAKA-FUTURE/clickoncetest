@@ -1522,7 +1522,7 @@
         <value>ID：</value>
       </setting>
       <setting name="login_pw" serializeAs="String">
-        <value>PW：</value>
+        <value>パスワード：</value>
       </setting>
       <setting name="team_description" serializeAs="String">
         <value>基本的な評価対象となるクラスやチームの新規登録、メンバーの編集を行います。
